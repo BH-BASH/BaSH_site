@@ -24,3 +24,11 @@ $('form').submit(() => {
     // フォーム送信はしない
     return false;
 });
+
+// サーバーからのメッセージ拡散に対する処理
+socket.on('spread message', (strMessage) => {
+    console.log('spread message :', strMessage);
+
+    // 拡散されたメッセージをメッセージリストに追加
+    $('#message_list').prepend($('<li>').text(strMessage));
+});
