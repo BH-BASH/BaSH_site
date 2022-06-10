@@ -29,6 +29,9 @@ io.on('connection', (socket) => {
     // 新しいメッセージ受信時の処理
     socket.on('new message', (strMessage) => {
         console.log('new message', strMessage);
+
+        // 送信元含む全員に送信
+        io.emit('spread message', strMessage);
     });
 });
 
