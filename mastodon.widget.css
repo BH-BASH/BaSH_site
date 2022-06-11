@@ -37,8 +37,8 @@
 }
 
 .mt-body {
-	height: 522px;
-	width: 600px;
+	height: 600px;
+	width: 522px;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 
