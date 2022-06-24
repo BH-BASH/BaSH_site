@@ -1,0 +1,30 @@
+ <style>
+
+/*背景＆文字色CSS*/
+    
+body {
+background-color: black;
+color: green;
+font-size: 1.5em;
+}
+    
+/*プロフィール画像用CSS*/
+    
+ img-prf {
+
+    height: 40px;
+    width: 100%;
+    border: green;
+    }
+    
+/*アニメーション用CSS*/
+ 
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+ 
+</style>
