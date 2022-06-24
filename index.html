@@ -5,10 +5,7 @@
 <html>
   　<head>
      　<meta charset="utf-8"/>
-    　<title>BaSHの部屋</title>
-     <!--CSS読み込み-->
-     <link rel="stylesheet" type="text/css" href="./Anime-bg-cr.css">
-     
+    　<title>BaSHの部屋</title>     
      
      <!--Syntax-Highlight-->
      
@@ -518,6 +515,14 @@ body{
     border: green;
     }
    
+  /*アニメーション用*/ 
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}   
    </style>
   
 </html>
