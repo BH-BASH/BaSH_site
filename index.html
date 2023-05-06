@@ -144,7 +144,28 @@ $(document).ready(function() {
 	                    <div class=Links-01>
 		   <a href="https://www.nicovideo.jp/user/123943908/">好きなVtuber/あまね</a><br>
 	           <a href="https://baldr-geek.net">技術開発局/Misskey</a><br>
-		  
+		  <a href="https://doneru.jp/bps_bash/">寄付は、こちらへ/Doneru</a><br>
+	          <a href="http://status.baldr-geek.net/">技術開発局/オンラインステータス</a><br>
+	    　　　　　　　　　</div>
+	        <div class="Link-Window-Open">
+			 <div class="BALDR-GEEK">
+            <input type="button" value="BG" id="mybtn1">
+            <script>
+                let BG = document.getElementById('mybtn1');
+                BG.addEventListener('click', () => {
+                    window.open('http://status.baldr-geek.net/', '_blank','top=100,left=100,width=300,height=400');
+                });
+                </script>
+                          </div>
+			 <div class="Doneru">
+            <input type="button" value="doneru" id="mybtn2">
+            <script>
+                let doneru = document.getElementById('mybtn2');
+                doneru.addEventListener('click', () => {
+                    window.open('https://doneru.jp/bps_bash/', '_blank','top=100,left=100,width=300,height=400');
+                });
+                </script>
+                          </div>
 				    
 				    
 		  </div>
